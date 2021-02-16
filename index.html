@@ -8,18 +8,11 @@
         crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
-        <style>
-            body{
-                margin: 0 auto;
-                width: 85%;
-                margin-left: 500px;
-            }
-        </style>
         <script>
             $(document).ready(function() {
-                $("#modalBox").show();
-                $(".modal-content").click(function() {
-                    $("#modalBox").hide();
+                $("#create").click(function() {
+                    $("#modalBox").show();
+                    $(".container").hide();
                     $("#txtName").attr("autofocus");
                 });
             });
@@ -31,16 +24,15 @@
                 <div class="col-sm-6 col-md-4 col-md-offset-4">
                     <div class="account-wall">
                         <img class="profile-img" src="logo.png" alt="">
-                             <h1 class="text-center login-title">FORM LOGIN</h1>
+                        <h1 class="text-center login-title">FORM LOGIN</h1>
                         <form class="form-signin" action="action-page.php" method="POST">
                         <input type="text" class="form-control" id="txtName" name="name" placeholder="Username" required>
                         <input type="password" class="form-control" placeholder="Password" required>
                         <button class="btn btn-success btn-block" type="submit" id="btnSubmit">Login</button>
                         <label class="checkbox pull-left">
-                            <input type="checkbox" value="remember-me">
-                            Remember me
-                        </label>
-                        </form>
+                        <input type="checkbox" value="remember-me">Remember me</label>
+                    </div>
+                        <a href="#" id="create" class="text-center new-account">Create an account </a>
                     </div>
                 </div>
             </div>
@@ -49,11 +41,11 @@
         <div id="modalBox">
             <div id="tutor" class="modal-content">
                 <div><img src="tutor.jpg" alt="" class="profile-img"></div>
-                <div>Login as Tutor</div>
+                <div>Create an Account as a Student</div>
             </div>
             <div id="siswa" class="modal-content" >
                 <div><img src="tutor.jpg" alt="" class="profile-img"></div>
-                <div>Login as Siswa</div>
+                <div>Create an Account as a Tutor</div>
             </div>
         </div>
     </body>
