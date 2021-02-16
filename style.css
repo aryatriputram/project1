@@ -113,5 +113,7 @@ body{
 
 #create {
     color: blue;
-    text-decoration:none;
 }
+ a{
+    text-decoration:none;
+ }
