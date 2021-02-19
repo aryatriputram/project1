@@ -1,7 +1,23 @@
 body{
     margin: 0 auto;
     width: 85%;
-    margin-left: 500px;
+    margin-left: 200px;
+    
+}
+
+#title{
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 100px;
+    overflow: hidden;
+    width: 500px;
+}
+
+
+.row {
+    float: right;
+    margin-top: 100px;
+    margin-right: 50px;
 }
 
 .form-signin
@@ -46,7 +62,8 @@ body{
 }
 .account-wall
 {
-    margin-top: 20px;
+    margin-top: 0px;
+    width: 400px;
     padding: 40px 0px 20px 0px;
     background-color: #f7f7f7;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
@@ -75,6 +92,11 @@ body{
 {
     margin-top: 10px;
 }
+
+#btnSubmit {
+    margin-left: 40%;
+}
+
 .new-account
 {
     display: block;
@@ -108,7 +130,9 @@ body{
 }
 
 #siswa {
-    margin-left: 100px;
+    position: fixed;
+    margin-top: 0px;
+    margin-right: 100px;
 }
 
 #create {
@@ -116,4 +140,12 @@ body{
 }
  a{
     text-decoration:none;
+ }
+
+ #regisTutor {
+    display: none;
+ }
+
+ #regisStudent {
+    display: none;
  }
